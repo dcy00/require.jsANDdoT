@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>登录_优德医药网</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css"  href="../css/src/common.css">
+    <link rel="stylesheet" type="text/css"  href="../css/src/login.css">
+    <script src="../js/ext/zepto.min.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+<header id="You_header">
+    <div id="You_prev" onClick="window.history.back()"> </div>
+    <span class="You_describe">登录</span> </header>
+<main  id="You_main">
+    <form>
+        <div class="log_type">
+            <input id="userName" name="username" class="user_name" type="text"  placeholder="用户名/手机号码/邮箱">
+            <i></i>
+        </div>
+        <div class="log_type  log_type2">
+            <input id="password" name="pwd" class="user_pass" type="password"  placeholder="请输入密码">
+            <i class="hidePass"></i>
+        </div>
+        <p class="error">账户名或者密码不正确</p>
+        <div class="login_check">
+            <div class="login_checkLogin">
+                <div class="login_fP"> <a href="#">忘记登陆密码</a> </div>
+            </div>
+            <div class="login_fP"> <a href="#">免费注册</a> </div>
+
+        </div>
+        <div class="login_btn">
+            <input type="hidden" name="urlcontent"  id="urlcontent">
+            <input type="button"  class="isubmit-login" value="登录">
+        </div>
+    </form>
+    <div class="login_other">
+        <div class="login_otherWay"> <span> 其他登录方式： </span>
+            <a id="qqLoginBtn" onClick="jointLogin('QQ')">
+                <img src="../css/image/qq_login.png"> </a>
+        </div>
+    </div>
+</main>
+<div class="footer" id="footerLogin">
+    <div class="footerLink"> <a href="#">触屏版</a> <a href="#">电脑版</a> <a href="#" class="last">优德医药商城</a>
+        <div class="clear"></div>
+    </div>
+    <p>版权信息：河南优德大药房连锁有限公司</p>
+</div>
+</body>
+</html>

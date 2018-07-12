@@ -1,0 +1,13 @@
+grunt打包发布事项
+1、先压缩css,修改html中css路径
+2、在components目录下打版本号、修改(html,require-config,gruntfile)路径。
+3、测试一下,测试完将require-config-修改【clientPath和dataHost】
+4、用将命令行转到项目的根目录下。
+5、执行npm install命令安装项目依赖的库。
+6、执行 grunt 命令。
+
+
+e:打包
+f:测试发布
+
+

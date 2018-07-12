@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title data-attach-point="title"></title>
+    <meta data-attach-point="keywords" name="keywords" content="">
+    <meta data-attach-point="description" name="description" content="">
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css" href="../css/src/common.css">
+    <script src="../js/require.min.js"></script>
+    <script src="../js/require-config.js"></script>
+</head>
+<body>
+
+<!--正文-->
+<div style="display: block" data-attach-point="searchList">
+
+</div>
+
+<!--搜索页-->
+<div id="search" style="display: none" data-attach-point="searchTools">
+    <!-- 头部-->
+    <div id="header" class="header">
+        <div id="You_prev" data-attach-point="You_prev"></div>
+        <div id="searchGoodsForm">
+            <input id="keyWord" type="text"  data-attach-point="searchEnter">
+            <input class="submitBtn"  type="submit" value="搜索" data-attach-point="searchClick">
+            <i data-attach-point="clearSearchInput"></i>
+        </div>
+        <div class="showList" data-attach-point="showList"></div>
+    </div>
+    <!--分类列表-->
+    <div class="classify" style="display:none"  data-attach-point="columnNav">
+
+    </div>
+    <div class="level"></div>
+    <!--搜索提示-->
+    <div class="searchPrompt">
+
+    </div>
+    <h2 class="h2-t h2-t11"><em></em>我的搜索</h2>
+    <ul class="mySearchRecord">
+
+    </ul>
+    <p class="clearSearch"><img src="../css/image/delete.png">清除历史记录</p>
+    <h2 class="h2-t h2-t11">
+        <em></em> 热门搜索
+    </h2>
+    <ul class="hotSearchRecord">
+
+    </ul>
+</div>
+
+<!--底部-->
+<div data-attach-point="footer">
+
+</div>
+<script>
+    require(['components/searchList']);
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css" href="../css/src/common.css">
+</head>
+<body>
+<header id="You_header">
+    <div id="You_prev" onclick="window.history.back()">
+    </div>
+    <div class="headerRight">
+        <a>
+            搜索
+        </a>
+    </div>
+    <div id="searchGoods">
+        <input type="text" class="search_txt" id="keyword">
+    </div>
+</header>
+<div class="noSearchResult">
+
+    <p>没有为您找到匹配的资讯建议您调整关键词重新搜索!</p>
+</div>
+<h2 class="h2-t h2-t5">
+    <em></em> 您可能感兴趣的资讯
+</h2>
+        <div class="newsList">
+            <ul class="newsListUl">
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                         <div class="newsListRight">
+                             <span>2016年南京二胎产假128天2016年南京二胎产假128天</span>
+                             <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司开的全国人大常委会的新闻发布会上国家卫生计生委法制司司开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                         </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="newsListLeft" src="../css/image/newsImg1.jpg">
+                        <div class="newsListRight">
+                            <span>2016年南京二胎产假128天</span>
+                            <p>在12月27日下午召开的全国人大常委会的新闻发布会上国家卫生计生委法制司司长</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <a class="loadMore">
+            <span>
+                正在加载更多
+            </span>
+        </a>
+        <div class="footer">
+            <div class="footerLink">
+                <a href="#">触屏版</a>
+                <a href="#">电脑版</a>
+                <a href="#" class="last">优德医药商城</a>
+                <div class="clear"></div>
+            </div>
+            <p>版权信息：河南优德大药房连锁有限公司</p>
+        </div>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-container .swiper-pagination',
+        paginationClickable: true,
+        centeredSlides: true,
+        autoplay: 2000,
+        autoplayDisableOnInteraction: false,
+        observer: true,
+        observeParents: true,
+        onInit: function(swiper){
+            $(".active-num").html(swiper.activeIndex+1);
+            $(".swipeLength").html(swiper.slides.length);
+        },
+        onSlideChangeEnd: function(swiper) {
+            $(".active-num").html(swiper.activeIndex+1);
+        }
+    });
+</script>
+</body>
+</html>

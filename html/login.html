@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>登录_优德医药网</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="pragma" content="no-cache" />
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <link rel="stylesheet" type="text/css"  href="../css/src/common.css">
+    <link rel="stylesheet" type="text/css"  href="../css/src/login.css">
+    <script src="../js/require.min.js"></script>
+    <script src="../js/require-config.js"></script>
+</head>
+<body>
+<header id="You_header">
+    <div id="You_prev" onClick="window.history.back()"> </div>
+    <span class="You_describe">登录</span> </header>
+<main  id="You_main">
+    <form>
+        <div class="log_type">
+            <input id="userName" name="username" tabindex="1" class="user_name" type="text"  placeholder="用户名/手机号码/邮箱">
+            <div id="uc"><i></i></div>
+        </div>
+        <div class="log_type  log_type2">
+            <input id="password" name="pwd" tabindex="1" class="user_pass" type="password"  placeholder="请输入密码">
+            <div id="pwd"><i class="hidePass"></i></div>
+        </div>
+        <div class="login_check">
+            <div class="login_checkLogin">
+                <div class="login_fP"> <a href="http://m.youde.com/retrieve.php">忘记登陆密码</a> </div>
+            </div>
+            <div class="login_fP"> <a href="http://m.youde.com/register.php?urlcontent=http://m.youde.com/my.php">免费注册</a> </div>
+
+        </div>
+        <div class="login_btn">
+            <input type="hidden" name="urlcontent"  id="urlcontent">
+            <input type="button"  class="isubmit-login" value="登录">
+        </div>
+    </form>
+</main>
+<div class="footer" id="footerLogin">
+    <div class="footerLink">
+        <a href="#">触屏版</a>
+        <a href="#">电脑版</a>
+        <a href="#" class="last">优德医药商城</a>
+        <div class="clear"></div>
+    </div>
+    <p>版权信息：河南优德大药房连锁有限公司</p>
+</div>
+
+<!--单点登录-->
+<div data-attach-point="singleLogin">
+
+</div>
+
+<script>
+    require(['components/login']);
+</script>
+</body>
+</html>
